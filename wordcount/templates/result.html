@@ -1,0 +1,19 @@
+<h1 style="font-size: 50px; font-family: Arial; color: orangered; position:absolute;left:50%; transform:translateX(-50%);"> -Result- </h1>
+<br><br><br><br>
+
+<h3 style="font-size: 25px; font-family: Arial;">입력하신 단어는 총 {{total}} 개 입니다. </h3>
+ 
+<h3 style="font-size: 22px; font-family: Arial;"> 입력한 텍스트 : </h3>
+
+<p style=" font-size:20px; font-family: Arial;"> {{text1}} </p>
+<br>
+<h3 style=" font-size: 25px; font-family: Arial;"> 단어 카운트 <h3>
+
+{% for word, frequency in dictionary %}
+<p style="font-family: Arial; font-size:18px; font-weight:300; ">{{word}} : {{frequency}} </p>
+
+
+
+{%endfor%}
+<br>
+<a href="{% url 'home' %}" style="font-size: 20px; font-family:Arial; position:relative; " >HOME</a>

@@ -1,0 +1,8 @@
+<h1 style="color:orangered; font-size: 50px; font-family: arial;position: absolute;top:10%;left:50%; transform:translateX(-50%);"> -Word Count Application- </h1> 
+<a href="{% url 'about' %}"  style="font-size: 20px; font-family: arial; position:relative; "> 더보기-About</a>
+
+<form action= "{% url 'result' %}">
+    <textarea name="text1" cols="80" rows="10" style="font-size: 20px; font-family: arial;position:absolute;top:31%; left:50%; transform:translateX(-50%);"></textarea>
+    <br>
+    <input type="submit" value="COUNT" style="font-size: 20px; font-family: arial;color: white; background-color: orangered; position:absolute; top:75%; left:50%; transform:translateX(-50%);">
+</form>
